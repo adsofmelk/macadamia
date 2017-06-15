@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Macadamia BosqueAventura  - www.macadamiabosqueaventura.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -63,8 +63,9 @@ return [
     | ahead and set this to a sensible default for you out of the box.
     |
     */
+		
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/Bogota',
 
     /*
     |--------------------------------------------------------------------------
@@ -77,7 +78,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
@@ -176,6 +177,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+    	
+    	//LARAVEL COLLECTIVE
+    	Collective\Html\HtmlServiceProvider::class,
 
     ],
 
@@ -225,6 +229,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+    	//LARAVEL COLLECTIVE
+    	'Form' => Collective\Html\FormFacade::class,
+    	'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 

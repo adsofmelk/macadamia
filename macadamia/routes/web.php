@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+Route::get('ultimosvisitantes','VisitanteController@ultimosVisitantes');
+Route::resource('visitante','VisitanteController');
+
+Route::post('getpad','SignatureController@getPad');
+Route::resource('signature','SignatureController');
+
+Route::get('/home', 'HomeController@index')->name('home');
